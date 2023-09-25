@@ -10,7 +10,7 @@ body{
 .heroBg{
     width: 100%;
     max-width: 1354px;
-    height: 990px;
+    height:100vh;
     
 }
 .header_items{
@@ -44,6 +44,7 @@ body{
     text-decoration: none;
     font-size: 20px;
     position: relative;
+   
 }
 .header_nav nav ul li a::after{
     content: "";
@@ -66,15 +67,89 @@ body{
 .header_items .signinBtn{
     color: #fff;
     background-color: transparent;
-    border:1.5px solid #3d220c;
+    border:1.5px solid #a6814c;
     border-radius: 15px;
     font-size: 18px;
     width: 120px;
     height: 40px;
     margin-top: 30px;
     margin-right: 10px;
+    cursor: pointer;
     transition: background-color .3s ease-in-out;
 }
 .header_items .signinBtn:hover{
+    background-color: #553721;
+}
+header .catchyText{
+    position: absolute;
+    top: 200px;
+    left :170px;
+    color: #fff;
+    font-size: 35px;
+}
+header .catchyText span{
+    margin-left: 230px;
+    margin-top: 15px;
+    font-size: 40px;
+    color: #a6814c;
+}
+header .header_action{
+    position: absolute;
+    top: 300px;
+    left: 190px;
+    color: #fff;
+    width: 450px;
+}
+header .header_action .funFact{
+    font-size: 20px;
+    line-height: 30px;
+
+}
+header .header_action .funFact .funFact_letter{
+    color: #a6814c;
+    font-size: 55px;
+    text-decoration: none;
+}
+header .header_action .funFact span{
+    font-size: 27px;
+    color: #553721;
+}
+header .header_action .funFact .lastpart{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+header .header_action .actionBtn{
+    float: right;
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
     background-color: #a6814c;
+    color: #553721;
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+header .header_action .actionBtn:hover{
+    background-color: transparent;
+    border: 1px solid #a6814c;
+}
+
+header .img{
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    width: 300px;
+   height: 300px;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3d220c;
+    clip-path: circle(600px at right 800px);
 }
