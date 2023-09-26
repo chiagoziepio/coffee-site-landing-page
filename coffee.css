@@ -172,3 +172,36 @@ header .img:hover{
 .socialsbx .social i:hover{
     transform: translateX(-5px);
 }
+.customersbx{
+   position: absolute; 
+   top: 600px;
+   right: 240px;
+  
+}
+
+.customersbx img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: -15px;
+    transition: .4s ease;
+}
+.customersbx img:hover{
+    transform: translateY(-10px);
+}
+.customersbx span i{
+    color: #a6814c;
+    transform: translateY(-5px);
+    margin-left: -7px;
+    transition: .4s ease;
+}
+.customersbx span i:hover{
+    transform: translateX(5px);
+   
+}
+.customersbx h5{
+    color: #553721;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    text-decoration-color: #a6814c;
+}
