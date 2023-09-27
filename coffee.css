@@ -182,7 +182,7 @@ header .img:hover{
 }
 .customersbx{
    position: absolute; 
-   top: 600px;
+   top: 550px;
    right: 240px;
   
 }
@@ -214,7 +214,13 @@ header .img:hover{
     text-decoration-color: #a6814c;
 }
 .login{
-
+    position: absolute;
+    top: 170px;
+    left: 800px;
+    display: none;
+}
+.login.popup{
+    display: block;
 }
 .loginForm{
 width: 400px;
@@ -224,21 +230,48 @@ box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
 backdrop-filter: blur(20px);
 background-color: transparent ;
 display: flex;
-position: absolute;
-top: 170px;
-left: 800px;
-
- overflow: hidden;
-
- padding-bottom: 10px;
+position: relative;
+overflow: hidden;
+padding-bottom: 10px;
+transition: min-height .3s ease-in;
 }
+
 .loginForm .login-singin{
     width: 100%;
+}
+.loginForm.swipe{
+    min-height: 320px;
+    
+}
+.loginForm.swipe .login-singin{
+    transform: translateX(-400px);
+    transition: none;
 }
 .loginForm .login-signup{
     width: 100%;
     transform: translateX(400px);
     position: absolute;
+    
+}
+.loginForm.swipe .login-signup{
+    transform: translateX(0);
+}
+.loginForm .closeIcon{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px ;
+    border: 1px solid #553721;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.loginForm .closeIcon i{
+    line-height: 40px;
+    color: #a6814c;
 }
 .loginForm form h2{
     font-weight: 900;
