@@ -5,6 +5,8 @@ const actionBtn = document.querySelector(".actionBtn");
 const signinLink = document.querySelector(".signupLink");
 const signupLink = document.querySelector(".signinLink");
 const closeIcon = document.querySelector(".closeIcon");
+const menuBars = document.querySelector(".menuBars");
+const headerNav = document.querySelector(".header_nav");
 
 signupLink.addEventListener("click", ()=>{
     loginForm.classList.add("swipe");
@@ -16,8 +18,11 @@ closeIcon.addEventListener("click",()=>{
     login.classList.remove("popup");
 });
 actionBtn.addEventListener("click",()=>{
-    login.classList.add("popup")
-})
+    login.classList.add("popup");
+});
 signinBtn.addEventListener("click",()=>{
-    login.classList.add("popup")
-})
+    login.classList.add("popup");
+});
+menuBars.addEventListener("click", ()=>{
+    headerNav.classList.toggle("show");
+});
