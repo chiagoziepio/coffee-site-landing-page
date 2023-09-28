@@ -237,7 +237,7 @@ header .img:hover{
     display: block;
 }
 .loginForm{
-width: 400px;
+width: 370px;
 border: 1px solid #3d220c;
 border-radius: 15px;
 box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
@@ -364,12 +364,23 @@ transition: min-height .3s ease-in;
         width: 100%;
         max-width: 620px;
     }
+    .header{
+        position: relative;
+        min-height: 100vh;
+    }
+    .header_items{
+        max-width: 100%;
+    }
     .heroBg{
-        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        max-width: 620px;
+        height: 300px;
     }
     .header_nav{
         width: 100%;
-        max-width: 620px;
+        max-width: 100%;
         display: none;
         position: absolute;
         left: 0;
@@ -394,22 +405,95 @@ transition: min-height .3s ease-in;
     .header_items .menuBars{
         display: block;
     }
+    .header_items .signinBtn{
+    
+        background-color: #a6814c;
+        border:1.5px solid #a6814c;
+        border-radius: 15px;
+        font-size: 18px;
+        width: 110px;
+    }
     .circle{display: none;
     }
     .customersbx{
-        display: none;
+        top: 350px;
+        right: 50%;
     }
     .socialsbx{
         display: none;
     }
-    .catchyText{
-        position: relative;
-    }
+    
     header .catchyText{
-        display: none;
+        position: relative;
+        top: 390px;
+        left :10px;
+        color: #fff;
+        font-size: 25px;
+
+    }
+    header .catchyText label{
+        font-size: 40px;
+    }
+    header .catchyText span{
+        margin-left: 130px;
+        margin-top: 15px;
+        font-size: 30px;
     }
     header .header_action{
-        display: none;
+        position: relative;
+        top: 400px;
+        left: 15px;
+        color: #fff;
+        max-width: 100%;
+    }
+    header .header_action .funFact{
+        font-size: 18px;
+        line-height: 25px;
+    
+    }
+    header .header_action .funFact .funFact_letter{
+        font-size: 45px;
+    }
+    header .header_action .funFact span{
+        font-size: 27px;
+        color: #a6814c;
+    }
+    header .header_action .funFact .lastpart{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    header .header_action .actionBtn{
+        float: right;
+        width: 120px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #a6814c;
+        color: white;
+        font-size: 19px;
+        margin-top: 5px;
+        transition: all .3s ease-in;
+    }
+    header .header_action .actionBtn:hover{
+        background-color: transparent;
+        border: 1px solid #a6814c;
+    }
+    .login{
+        position: absolute;
+        top: 90px;
+        left: 0;
+    }
+    .login.popup{
+        display: block;
+    }
+    .loginForm{
+    max-width: 400px;
+    border: 1px solid #3d220c;
+    border-radius: 15px;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
+    backdrop-filter:0;
+    background-color: white ;
+    display: flex;
+   
     }
     header .img{
         display: none;
